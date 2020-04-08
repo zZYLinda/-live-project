@@ -13,8 +13,9 @@ class MainUI(tk.Frame):
   self.createWidgets()
  # 创建控件
  def createWidgets(self):
-# 创建一个标签，输出要显示的内容（更多Python学习资料加群631441315）
+# 创建一个标签，输出要显示的内容
   self.firstLabel = tk.Label(self,text="登记姓名、学号和进入时间")
+
 # 设定使用grid布局
   self.firstLabel.grid()
 # 创建一个按钮，用来触发answer方法
@@ -23,12 +24,12 @@ class MainUI(tk.Frame):
   self.clickButton.grid()
  def answer(self):
 # 我们通过 messagebox 来显示一个提示框
-   mbox.showinfo("「校园人口调查」",'''学校人员+1''')
+   mbox.showinfo("「在校记录登记」",'''学校人员+1''')
     
 # 创建一个MainUI对象
 app = MainUI()
 # 设置窗口标题
-app.master.title('「校园人口调查」')
+app.master.title('「在校记录登记」')
 # 设置窗体大小
 app.master.geometry('300x200')
 # 主循环开始
